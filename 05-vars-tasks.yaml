@@ -1,0 +1,15 @@
+- name: variables
+  hosts: localhost
+  vars:
+    x: "People"
+    y: "Hill stations"
+    z: "Winter"
+  tasks:
+    - name: print override information
+      vars:
+        x: "chandu"
+      ansible.builtin.debug:
+        msg: "x are visiting y in z"
+    - name: print information
+      ansible.builtin.debug:
+        msg: "x are visiting y in z"
