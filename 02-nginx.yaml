@@ -5,7 +5,7 @@
    - name: install nginx
      ansible.builtin.dnf:
       name: nginx
-      state: stopped
+      state: absent
    - name: start nginx
      ansible.builtin.service:
       name: nginx
