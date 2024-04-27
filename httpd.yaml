@@ -7,7 +7,7 @@
       name: httpd
       state: latest
    - name: run httpd
-     ansible.buitin.service:
+     ansible.builtin.service:
       name: httpd
       state: started
       enabled: yes
