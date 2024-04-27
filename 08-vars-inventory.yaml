@@ -1,0 +1,6 @@
+- name: variables from vars file
+  hosts: localhost
+  tasks:
+    - name: print information
+      ansible.builtin.debug:
+        msg: "{{x}} are visiting {{y}} in {{z}}"
