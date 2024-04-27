@@ -9,7 +9,7 @@
       vars:
         x: "chandu"
       ansible.builtin.debug:
-        msg: "x are visiting y in z"
+        msg: "{{x}} are visiting {{y}} in {{z}}"
     - name: print information
       ansible.builtin.debug:
-        msg: "x are visiting y in z"
+        msg: "{{x}} are visiting {{y}} in {{z}}"
