@@ -7,4 +7,4 @@
   tasks:
    - name: print information
      ansible.builtin.debug:
-      msg: "x are visiting y in z"
+      msg: "{{x}} are visiting {{y}} in {{z}}"
