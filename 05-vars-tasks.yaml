@@ -7,7 +7,7 @@
   tasks:
     - name: print override information
       vars:
-        x: "chandu"
+        x: "chandu and I"
       ansible.builtin.debug:
         msg: "{{x}} are visiting {{y}} in {{z}}"
     - name: print information
