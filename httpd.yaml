@@ -5,7 +5,7 @@
    - name: install httpd
      ansible.builtin.dnf:
       name: httpd
-      state: latest
+      state: absent
    - name: run httpd
      ansible.builtin.service:
       name: httpd
