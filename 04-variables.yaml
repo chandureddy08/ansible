@@ -1,9 +1,9 @@
 - name: variables
   hosts: localhost
   vars:
-    x: People
-    y: Hill stations
-    z: Winter
+    x: "People"
+    y: "Hill stations"
+    z: "Winter"
   tasks:
    - name: print information
      ansible.builtin.debug:
