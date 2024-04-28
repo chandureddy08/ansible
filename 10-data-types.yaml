@@ -10,7 +10,7 @@
       devops: 100 #number
       aws: 50
       docker: 25
-    realtime: yes  #boolean
+    realtime: true  #boolean
   tasks:
   - name: print variables
     ansible.builtin.debug:
