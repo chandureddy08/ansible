@@ -2,8 +2,8 @@
   hosts: localhost
   become: yes
   tasks:
-  - name: install MySQL server
+  - name: install packages
     ansible.builtin.dnf:
-    name: mysql
-    state: latest
-    enable: yes
+      name: mysql
+      state: latest
+      enable: yes
