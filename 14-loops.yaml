@@ -15,3 +15,5 @@
   tasks:
   - name: install MySQL server
     ansible.builtin.command: dnf install mysql -y
+    state: latest
+    enable: yes
