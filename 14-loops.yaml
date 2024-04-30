@@ -9,3 +9,9 @@
       - linux
       - shell
       - ansible
+- name: install packages
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install MySQL server
+    ansible.builtin.command: dnf install mysql -y
