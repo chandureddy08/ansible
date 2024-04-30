@@ -6,3 +6,12 @@
     ansible.builtin.dnf:
       name: mysql
       state: latest
+
+- name: install packages
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install packages
+    ansible.builtin.dnf:
+      name: nginx
+      state: latest
