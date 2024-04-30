@@ -15,4 +15,4 @@
     ansible.builtin.dnf:
       name: nginx
       state: latest
-      started: yes
+      enabled: yes
