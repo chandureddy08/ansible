@@ -38,4 +38,18 @@
   tasks:
   - name: print min and max
     ansible.builtin.debug:
-      msg: "minimum value is: {{ list | min }} & max value is: {{ list | max }}"
+      msg: "minimum value is: {{ list | min }} & maximum value is: {{ list | max }}"
+
+- name: convert dictionary into list/items
+  hosts: localhost
+  vars:
+    dictionary:
+      - name: chandu
+        age: 500
+        work: hand job
+        alive: yes
+  tasks:
+  - name: convert into list
+    ansible.builtin.debug:
+      msg: "{{ dictionary | dict2items }}"
+
