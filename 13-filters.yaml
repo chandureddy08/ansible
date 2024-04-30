@@ -24,7 +24,8 @@
       msg: "{{ greeting | lower }}"
 - name: remove duplicate
   hosts: localhost
-  numbers: [1, 2, 2, 3, 4, 4, 5, 5]
+  vars:
+    numbers: [1, 2, 2, 3, 4, 4, 5, 5]
   tasks:
   - name: remove duplicate numbers
     ansible.builtin.debug:
