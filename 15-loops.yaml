@@ -6,4 +6,3 @@
     ansible.builtin.dnf:
       name: mysql
       state: latest
-      enable: yes
