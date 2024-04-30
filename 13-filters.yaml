@@ -44,10 +44,10 @@
   hosts: localhost
   vars:
     dictionary:
-      - name: chandu
-        age: 500
-        work: hand job
-        alive: yes
+      name: chandu
+      age: 500
+      work: hand job
+      alive: yes
   tasks:
   - name: convert into list
     ansible.builtin.debug:
