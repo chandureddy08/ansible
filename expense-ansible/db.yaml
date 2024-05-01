@@ -2,9 +2,9 @@
   hosts: db
   become: yes
   vars_prompt:
-    - name: mysql_password
-      prompt: please enter root password
-      private: false
+  - name: mysql_password
+    prompt: please enter root password
+    private: false
   tasks:
   - name: install mysql server
     ansible.builtin.dnf:
