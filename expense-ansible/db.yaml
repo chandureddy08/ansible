@@ -28,7 +28,7 @@
     community.mysql.mysql_info:
       login_user: root
       login_password: "{{mysql_password}}"
-      localhost: db.chandureddy.online
+      login_host: db.chandureddy.online
       filter: version
     ignore_errors: yes
     register: mysql_connection_outputs
