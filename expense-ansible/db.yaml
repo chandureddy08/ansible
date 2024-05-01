@@ -6,7 +6,6 @@
       prompt: please enter root password
       private: false
   tasks:
-
   - name: install mysql server
     ansible.builtin.dnf:
       name: mysql-server
@@ -41,6 +40,3 @@
   - name: set up root password
     ansible.builtin.command: "mysql_secure_installation --set-root-pass {{mysql_password}}"
     when: mysql_connection_outputs.failed is true
-
-
-    
