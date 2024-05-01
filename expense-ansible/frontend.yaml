@@ -38,4 +38,4 @@
   - name: restart nginx
     ansible.builtin.service:
       name: nginx
-      state: restrted
+      state: restarted
